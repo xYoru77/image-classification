@@ -9,7 +9,7 @@ import numpy as np
 
 # Creating the dataset
 dataset = MNIST(root='data/',
-                train=True,
+                download=True,
                 transform=transforms.ToTensor())
 test_dataset = MNIST(root='data/',
                      train=False,
